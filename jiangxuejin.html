@@ -1,1 +1,29 @@
-javascript
+<!DOCTYPE html>
+<html>
+<head>
+	<title>科蚪实务学堂奖学金系统</title>
+</head>
+<script type="text/javascript">
+	alert("welcome！")
+	var TuiChu=0;
+	while(TuiChu==0){
+		alert("欢迎使用科蚪实务学堂奖学金系统！")
+     var javaFenShu,webFenShu=0;
+     javaFenShu=prompt("请输入您的Java分数：");
+     webFenShu=prompt("请输入您的web分数：");
+     if(javaFenShu>=85&&webFenShu<85){
+      alert("恭喜您获得Java奖学金80蚪");
+      TuiChu=prompt("继续评测请按“0”退出请随便点一下键盘。");
+     }else if(webFenShu>=85&&javaFenShu<85){
+      alert("恭喜您获得web奖学金80蚪");
+      TuiChu=prompt("继续评测请按“0”退出请随便点一下键盘。");
+     }else if(javaFenShu>=85&&javaFenShu>=85){
+      alert("恭喜您获得编程奖学金200蚪");
+      TuiChu=prompt("继续评测请按“0”退出请随便点一下键盘。");
+     }
+	}
+</script>
+<body>
+
+</body>
+</html>

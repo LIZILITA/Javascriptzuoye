@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
      </head>
     <script type="text/javascript">
-    	alert('welcome!')
-    	while(true){
+    	alert('welcome!');
+        var TuiChu=0;
+    	while(TuiChu==0){
     	var shangPinHao,shangPinShuLiang,qianShu,zongJia,zhaoLing=0;
-     shangPinHao=prompt("请输入商品号码")
+     shangPinHao=prompt("欢迎使用科蚪学堂售货机！\n您可以购买以下商品：\n1，售货机。1000元\n2，辣条。2.5元\n3,钢笔。15元\n4,小熊。0元\n请输入商品号码")
      shangPinShuLiang=prompt("请输入购买数量")
      qianShu=prompt("请投币")
      switch(shangPinHao){
@@ -15,7 +16,7 @@
         zongJia=1000*shangPinShuLiang;
         zhaoLing=qianShu-zongJia;
         if(qianShu>=zongJia){
-        	alert('您购买了：'+shangPinShuLiang+'台售货机。总价为：'+zongJia+'找零：'+zhaoLing+'元');
+        	alert("您购买了："+shangPinShuLiang+"台售货机\n总价为："+zongJia+"找零："+zhaoLing+"元");
         }else{
         	alert('您的钱不够，还需投入'+(-zhaoLing)+'元');
         	alert('请取走您的'+qianShu+'元');
@@ -26,7 +27,7 @@
         zongJia=2.5*shangPinShuLiang;
         zhaoLing=qianShu-zongJia;
         if(qianShu>=zongJia){
-        	 alert('您购买了：'+shangPinShuLiang+'包辣条。总价为：'+zongJia+'找零：'+zhaoLing+'元');
+        	 alert("您购买了："+shangPinShuLiang+"包辣条\n总价为："+zongJia+"找零："+zhaoLing+"元");
         }else{
         	alert('您的钱不够，还需投入'+(-zhaoLing)+'元');
         	alert('请取走您的'+qianShu+'元');
@@ -36,19 +37,20 @@
          zongJia=15*shangPinShuLiang;
         zhaoLing=qianShu-zongJia;
            if(qianShu>=zongJia){
-        	 alert('您购买了：'+shangPinShuLiang+'支钢笔。总价为：'+zongJia+'找零：'+zhaoLing+'元');
+        	 alert("您购买了："+shangPinShuLiang+"支钢笔\n总价为："+zongJia+"找零："+zhaoLing+"元");
         }else{
-        	alert('您的钱不够，还需投入'+(-zhaoLing)+'元');
+        	alert("您的钱不够!\n还需投入"+(-zhaoLing)+"元");
         	alert('请取走您的'+qianShu+'元');
         }
         break;
          case "4":
-         alert('请下周三的下午三点取走您的商品。注：没有找零。');
+         alert("请下周三的下午三点取走您的商品\n注：没有找零。");
         break;
         default:
         alert('输入有误！');
         break;
                        }
+                TuiChu=prompt("继续评测请按“0”退出请随便点一下键盘。");
                    }
                    
     </script>
