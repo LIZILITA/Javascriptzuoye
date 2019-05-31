@@ -1,1 +1,62 @@
-<html> 
+<!DOCTYPE html>
+<html><head>
+    <title>售货机</title>
+    <meta charset="UTF-8">
+     </head>
+    <script type="text/javascript">
+    	alert('welcome!')
+    	while(true){
+    	var shangPinHao,shangPinShuLiang,qianShu,zongJia,zhaoLing=0;
+     shangPinHao=prompt("请输入商品号码")
+     shangPinShuLiang=prompt("请输入购买数量")
+     qianShu=prompt("请投币")
+     switch(shangPinHao){
+        case "1":
+        zongJia=1000*shangPinShuLiang;
+        zhaoLing=qianShu-zongJia;
+        if(qianShu>=zongJia){
+        	alert('您购买了：'+shangPinShuLiang+'台售货机。总价为：'+zongJia+'找零：'+zhaoLing+'元');
+        }else{
+        	alert('您的钱不够，还需投入'+(-zhaoLing)+'元');
+        	alert('请取走您的'+qianShu+'元');
+        }
+        
+        break;
+        case "2":
+        zongJia=2.5*shangPinShuLiang;
+        zhaoLing=qianShu-zongJia;
+        if(qianShu>=zongJia){
+        	 alert('您购买了：'+shangPinShuLiang+'包辣条。总价为：'+zongJia+'找零：'+zhaoLing+'元');
+        }else{
+        	alert('您的钱不够，还需投入'+(-zhaoLing)+'元');
+        	alert('请取走您的'+qianShu+'元');
+        }
+        break;
+         case "3":
+         zongJia=15*shangPinShuLiang;
+        zhaoLing=qianShu-zongJia;
+           if(qianShu>=zongJia){
+        	 alert('您购买了：'+shangPinShuLiang+'支钢笔。总价为：'+zongJia+'找零：'+zhaoLing+'元');
+        }else{
+        	alert('您的钱不够，还需投入'+(-zhaoLing)+'元');
+        	alert('请取走您的'+qianShu+'元');
+        }
+        break;
+         case "4":
+         alert('请下周三的下午三点取走您的商品。注：没有找零。');
+        break;
+        default:
+        alert('输入有误！');
+        break;
+                       }
+                   }
+                   
+    </script>
+  <body>
+<h1>欢迎使用科蚪学堂售货机！</h1>
+<p>您可以购买以下商品：</p>
+<p>1，售货机。1000元</p>
+<p>2，辣条。2.5元</p>
+<p>3,钢笔。15元</p>
+<p>4,小熊。0元</p>
+</body></html>
