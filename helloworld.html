@@ -3,7 +3,17 @@
 <head>
 	<title>Hello World!</title>
 	<script type="text/javascript">		
-     
+     var chengJi=new Array(7);
+     var zongFen=0;
+     var buJiGe=0;
+     for(var i=0;i<7;i++){
+        chengJi[i]=prompt("请输入第"+i+"个分数");
+        zongFen+=parseInt(chengJi[i]);
+        if(chengJi[i]<60){
+           buJiGe++;
+        }
+     }
+     alert("总分为："+zongFen+"\n平均分为："+zongFen/7+"\n成绩不及格的共有"+buJiGe+"个");
 	</script>
 </head>
 <body>
